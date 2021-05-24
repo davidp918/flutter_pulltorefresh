@@ -43,7 +43,7 @@ class GifHeader1State extends RefreshIndicatorState<GifHeader1>
     // TODO: implement onModeChange
     if (mode == RefreshStatus.refreshing) {
       _gifController.repeat(
-          min: 0, max: 29, period: Duration(milliseconds: 500));
+          min: 0, max: 100, period: Duration(milliseconds: 500));
     }
     super.onModeChange(mode);
   }
